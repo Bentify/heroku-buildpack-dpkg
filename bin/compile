@@ -37,7 +37,7 @@ for URL in $(cat $BUILD_DIR/Debfile); do
 	topic "Loading cached $URL"
   else
     topic "Fetching $URL"
-    curl -L -o $DPKG_CACHE_DIR/`basename $URL` $URL
+    curl -L -o $DPKG_CACHE_DIR/`basename $URL` $URL --no-check-certificate
   fi
 done
 
