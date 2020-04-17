@@ -62,6 +62,8 @@ export CPATH="\$INCLUDE_PATH"
 export CPPPATH="\$INCLUDE_PATH"
 EOF
 
+cd $BUILD_DIR/.dpkg/usr/bin && ls -la
+
 ub -v
 
 export HOME=$BUILD_DIR
