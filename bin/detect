@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "Dpkg"
+exit 0
