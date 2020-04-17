@@ -62,5 +62,7 @@ export CPATH="\$INCLUDE_PATH"
 export CPPPATH="\$INCLUDE_PATH"
 EOF
 
+ub -v
+
 export HOME=$BUILD_DIR
 source $HOME/.profile.d/000_dpkg.sh
